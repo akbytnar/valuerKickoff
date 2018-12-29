@@ -1,0 +1,21 @@
+.joinUs{
+  outline: none;
+  cursor: pointer;
+  background: $grey-dark;
+  color: $grey-light;
+  border: none;
+  @extend .font-size--16;
+  height:50px;
+  width:100px;
+  span{
+    position: relative;
+    left: 50px;
+    -webkit-transition: left 1s;
+  }
+}
+.joinUs:hover{
+  span{
+    left:0;
+    -webkit-transition: left 1s;
+  }
+}

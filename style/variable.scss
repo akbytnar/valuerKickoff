@@ -1,0 +1,48 @@
+$grey-red: #d24d57;
+$grey-dark: #575757;
+$grey-normal: #848484;
+$grey-light: #cbcbcb;
+$blue-dark: #232531;
+
+$colors: (grey-red: $grey-red, grey-dark: $grey-dark, grey-normal: $grey-normal, grey-light: $grey-light, blue-dark: $blue-dark);
+$spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100);
+$sides: (top, bottom, left, right);
+$font-sizes: (48, 24, 36, 16);
+$letter-spacing: (14, 12, 7, 6, 5, 2);
+
+@each $spacing in $letter-spacing {
+  .l-s-#{$spacing}{
+    letter-spacing: #{$spacing}px;
+  }
+}
+
+@each $size in $font-sizes {
+  .font-size--#{$size}{
+    font-size: #{$size}px;
+  }
+}
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+
+    .p-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+}
+
+@each $key, $val in $colors {
+  .color-#{$key} {
+    color: $val;
+  }
+}
+
+.float-right{
+  float: right;
+}
+.float-left{
+  float: left;
+}
