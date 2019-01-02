@@ -14,7 +14,7 @@
   letter-spacing: 6px;
 }
 
-.l-s-5 {
+.l-s-5, .content-box-img .img-title h2 {
   letter-spacing: 5px;
 }
 

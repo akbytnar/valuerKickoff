@@ -1,21 +1,23 @@
-body{
+body {
   font-family: 'Montserrat', sans-serif;
   background: $blue-dark;
-  margin:0;
+  margin: 0;
   color: white;
-  font-weight:500;
-}
-h3{
-  font-weight: 500;
-  letter-spacing: 6px;
-}
-h2{
   font-weight: 500;
 }
 
-p{
+h3 {
+  font-weight: 500;
+  letter-spacing: 6px;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+p {
   @extend .font-size--16;
-color: $grey-p;
+  color: $grey-p;
   line-height: 2.25;
 }
 
@@ -29,36 +31,42 @@ color: $grey-p;
 
   background-color: $grey-light;
 }
-.nav-bar{
-  width:80%;
+
+.nav-bar {
+  width: 80%;
   min-width: 1100px;
-  padding-top:95px;
+  padding-top: 95px;
   padding-bottom: 150px;
-  margin:auto;
+  margin: auto;
 }
-.social-logo{
+
+.social-logo {
   cursor: pointer;
   width: 41px;
-  margin-right:20px;
+  margin-right: 20px;
 }
-.valuer-logo{
+
+.valuer-logo {
   cursor: pointer;
   width: 240px;
 }
-.gradient{
-  height:100%;
+
+.gradient {
+  height: 100%;
   background-image: linear-gradient(rgba(35, 37, 49, 0.9), rgba(0, 0, 0, 0.9));
 }
-.one-in-line{
+
+.one-in-line {
   flex: 0 1 100%;
 }
 
-.intro-content-box{
-  margin:auto;
+.intro-content-box {
+  margin: auto;
   width: 55%;
   min-width: 900px;
 }
-.main-header{
+
+.main-header {
   font-weight: 500;
   line-height: 0.33;
   @extend .l-s-12;
@@ -66,35 +74,37 @@ color: $grey-p;
   @extend .font-size--48;
 }
 
-.content-box{
-  margin:70px auto;
+.content-box {
+  margin: 70px auto;
   width: 70%;
-  min-width:1000px;
+  min-width: 1000px;
   display: flex;
   flex-wrap: wrap;
 }
 
-.content-box-title{
-  position:relative;
+.content-box-title {
+  position: relative;
   width: 40%;
-  h2{
+  h2 {
     @extend .font-size--36;
     @extend .l-s-7;
   }
 }
-.red-line{
+
+.red-line {
   background: $grey-red;
   position: absolute;
-  height:5px;
+  height: 5px;
   width: 63px;
   left: -30px;
 }
-.grey-box{
+
+.grey-box {
   width: 438px;
   height: 544px;
   background-color: $grey-normal;
   position: relative;
-  h2{
+  h2 {
     position: absolute;
     left: 350px;
     width: max-content;
@@ -102,10 +112,12 @@ color: $grey-p;
     @extend .l-s-14
   }
 }
-.content-box-text{
+
+.content-box-text {
   width: 60%;
 }
-.content-box-img{
+
+.content-box-img {
   width: 100%;
   height: 450px;
   overflow: hidden;
@@ -122,52 +134,55 @@ color: $grey-p;
     background-color: $blue-dark;
     opacity: 0.9;
   }
-  .img-title{
+  .img-title {
     bottom: 0;
     right: 10px;
     position: absolute;
-    h2{
-     text-align: right;
+    h2 {
+      @extend .l-s-5;
+      text-align: right;
     }
   }
 }
 
-.box-text{
+.box-text {
   width: 550px;
-  p{
+  p {
     @extend .font-size--16;
     font-weight: normal;
     line-height: 2.25;
   }
 }
 
-.box-text-follow{
+.box-text-follow {
   display: flex;
   align-items: center;
 }
-.schedule-box{
-  h2{
+
+.schedule-box {
+  h2 {
     @extend .l-s-7;
     @extend .font-size--36;
   }
-  h3{
+  h3 {
     @extend .l-s-2;
     letter-spacing: 2px;
     margin: 30px 0;
   }
 }
-.getTicket{
+
+.getTicket {
   padding: 81px 55px;
   width: 100%;
   border: 1px solid $grey-normal;
   display: flex;
   align-items: center;
   justify-content: center;
-  h2{
+  h2 {
     font-weight: 100;
     @extend .font-size--36;
   }
-  button{
+  button {
     margin-left: auto;
   }
 }
