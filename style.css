@@ -694,8 +694,8 @@ p {
 }
 
 .schedule-box h3 {
-  letter-spacing: 2px;
   margin: 30px 0;
+  font-weight: 600;
 }
 
 .getTicket {
