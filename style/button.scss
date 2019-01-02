@@ -10,12 +10,12 @@
   span{
     position: relative;
     left: 50px;
-    -webkit-transition: left 1s;
+    -webkit-transition: left 0.5s;
   }
 }
 .joinUs:hover{
   span{
     left:0;
-    -webkit-transition: left 1s;
+    -webkit-transition: left 0.5s;
   }
 }
