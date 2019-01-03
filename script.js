@@ -6,7 +6,7 @@ const contentBoxPosition = contentBox.offsetTop - contentBoxMargin;
 
 var scrollDown = false;
 
-function isScrollDown() {
+function updateScrollDirection() {
     if ((document.body.getBoundingClientRect()).top > scrollPos) {
         scrollDown = false;
     }
@@ -16,7 +16,7 @@ function isScrollDown() {
 }
 
 window.addEventListener('scroll', function () {
-    isScrollDown();
+    updateScrollDirection();
     scrollPos = (document.body.getBoundingClientRect()).top;
     if (window.scrollY < contentBoxPosition && scrollDown) {
      contentBox.scrollIntoView();
