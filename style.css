@@ -552,6 +552,12 @@ body {
   margin: 0;
   color: white;
   font-weight: 500;
+  scroll-snap-type: y mandatory;
+}
+
+.scrollChild {
+  scroll-snap-align: start;
+  scroll-padding: 70px;
 }
 
 h3 {
