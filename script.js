@@ -1,4 +1,3 @@
-
 document.getElementById("arrowUp").onclick = function () {
     window.scrollTo({
         top: 0,
@@ -8,13 +7,12 @@ document.getElementById("arrowUp").onclick = function () {
 
 window.addEventListener('scroll', function () {
     var h = window.innerHeight - 100;
-    if(window.pageYOffset >  h ){
+    if (window.pageYOffset > h) {
         document.getElementById("arrowUp").classList.add("active");
-    }else{
+    } else {
         document.getElementById("arrowUp").classList.remove("active");
     }
 });
-
 
 
 //SCROLL ANIMATION IS IN CSS

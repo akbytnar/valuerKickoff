@@ -8,7 +8,8 @@ body {
   scroll-padding: 70px;
 
 }
-.scrollChild{
+
+.scrollChild {
   scroll-snap-align: start;
 }
 
@@ -193,30 +194,26 @@ p {
   }
 }
 
-
-#arrowUp{
+#arrowUp {
   position: fixed;
   bottom: 50px;
   right: 50px;
   cursor: pointer;
-  img{
+  img {
     width: 70px;
     height: auto;
   }
 }
 
-
 .fadeOutIn {
   opacity: 0;
-  transition: all 1s;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  transition: all 0.75s;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
-/* pulls it all back together */
 .fadeOutIn.active {
   opacity: 1;
- // transform: translateX(0) translateY(0) rotateZ(0) scale(1);
 }

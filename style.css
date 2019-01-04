@@ -732,14 +732,13 @@ p {
 
 .fadeOutIn {
   opacity: 0;
-  transition: all 1s;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  transition: all 0.75s;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 
-/* pulls it all back together */
 .fadeOutIn.active {
   opacity: 1;
 }
